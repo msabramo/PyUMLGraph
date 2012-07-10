@@ -1,0 +1,8 @@
+#!/bin/bash
+
+pyumlgraph --types --nodefillcolor="#ffcc19" -o example1.dot example1.py
+dot -Tpng -oexample1.png example1.dot
+
+pyumlgraph --nodefillcolor="#ffcc19" -o simple.dot simple.py
+dot -Tpng -osimple.png simple.dot
+

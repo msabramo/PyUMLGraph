@@ -1,0 +1,19 @@
+graph UML {
+  nodesep=0.3;
+  color="black"
+  bgcolor="white"
+  node [fontsize=10];
+
+    // class Employee 
+    Employee [fillcolor="#ffcc19", shape="record", style="filled", label="Employee"];
+      Employee -- Person [arrowhead=empty];
+
+    // class Person 
+    Person [fillcolor="#ffcc19", shape="record", style="filled", label="Person"];
+
+    // class Client 
+    Client [fillcolor="#ffcc19", shape="record", style="filled", label="Client"];
+      Client -- Person [arrowhead=empty];
+
+
+}

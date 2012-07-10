@@ -1,0 +1,15 @@
+
+PyUMLGraph
+=================
+
+Version 0.1.10 (2003-11-17)
+--------------------------
+Fixed UML generator to put diamonds signifying compositions on the
+arrowtail (the class holding the reference) instead of the arrowhead
+(the class that is held by another class).
+
+
+Version 0.1.2 (2003-10-15)
+--------------------------
+
+Initial release

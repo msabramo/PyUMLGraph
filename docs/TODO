@@ -1,0 +1,29 @@
+PyUMLGraph to do list:
+======================
+
+More unit tests
+  Return value class names
+  --types --methods --attributes --references --all
+  command-line
+
+Generate HTML with imagemaps
+  link to PyDoc
+  link to editors
+  top-level low detail, click to see higher detail of that class and its relationships
+
+XMI/ArgoUML output
+
+More commandline options 
+  to specify graph appearance, like UMLGraph
+
+Declarative options
+  PyUMLGraph class
+  @options in docstrings
+  @types @methods @attributes @references @all
+  @hidden to hide classes
+  @nodefillcolor
+  @bgcolor
+  etc.
+  @visibility - private, public (using docstring or _underscore convention)
+
+  

@@ -1,0 +1,8 @@
+global-exclude *~
+include *.txt
+recursive-include src *.py pyumlgraph
+recursive-include test *.py
+recursive-include examples *.py make_example_diagrams 
+recursive-include examples 
+recursive-include docs *
+include MANIFEST.in

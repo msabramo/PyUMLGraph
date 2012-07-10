@@ -1,0 +1,132 @@
+InfoCollectorTest:
+  attributeInfo:
+    _cleanups: [list]
+    _resultForDoCleanups: [ResultProxy]
+    _testMethodDoc: [None]
+    _testMethodName: [str]
+    _type_equality_funcs: [dict]
+    classesToCollectInfoAbout: [None]
+    infoCollector: [InfoCollector]
+  baseClasses: [TestCase]
+  className: InfoCollectorTest
+  classesToCollectInfoAbout: null
+  classesToIgnore: &id001 [null, InfoCollector]
+  localReferences: [TestClassOne, TestClassThree, TestClassTwo, TestClassFour]
+  methodArgumentsDefaults: {}
+  methodArgumentsInfo: {}
+  methodArgumentsOrder:
+    excerciseTestClasses: !!python/tuple [self]
+  methodInfo: {excerciseTestClasses: public, mockGlobalTrace: public, setUp: public,
+    tearDown: public, testCollectAttributeInfo: public, testCollectBaseNamesInfo: public,
+    testCollectInfoYesNo: public, testCollectLocalReferencesInfo: public, testCollectMethodArgumentDefaults: public,
+    testCollectMethodArgumentOrderInfo: public, testCollectMethodArgumentsInfo: public,
+    testCollectMethodNameInfo: public, testCollectMethodReturnValueClassNamesInfo: public,
+    testCollectSelfReferencesInfo: public, testGetDotFormattedInfo: public, testYamlDump: public,
+    verifySequencesMatch: public, writeTextFile: public}
+  methodReturnValueClassNames:
+    excerciseTestClasses: [None]
+  selfReferences: [str, ResultProxy, None, list, dict]
+TestClassFour:
+  attributeInfo:
+    bar: [TestClassTwo]
+  baseClasses: []
+  className: TestClassFour
+  classesToCollectInfoAbout: null
+  classesToIgnore: *id001
+  localReferences: [TestClassThree, int, float, str]
+  methodArgumentsDefaults:
+    methodOne: ['''bar''']
+  methodArgumentsInfo:
+    methodOne:
+      methodOneArgOne: [str]
+      methodOneArgThree: [float]
+      methodOneArgTwo: [int]
+  methodArgumentsOrder:
+    __init__: !!python/tuple [self]
+    methodOne: !!python/tuple [self, methodOneArgOne, methodOneArgTwo, methodOneArgThree]
+  methodInfo: {__init__: public, methodOne: public}
+  methodReturnValueClassNames:
+    __init__: [None]
+    methodOne: [None]
+  selfReferences: [TestClassTwo]
+TestClassOne:
+  attributeInfo:
+    dict: [dict]
+    list: [list]
+    one: [str]
+    pi: [float]
+    three: [int, str]
+    two: [str, list]
+    vegetable: [str]
+  baseClasses: []
+  className: TestClassOne
+  classesToCollectInfoAbout: null
+  classesToIgnore: *id001
+  localReferences: [str, int]
+  methodArgumentsDefaults:
+    methodOne: ['''defaultA''']
+    methodTwo: [None, '1.614']
+  methodArgumentsInfo:
+    methodOne:
+      methodOneArgOne: [str]
+    methodTwo:
+      methodTwoArgOne: [int]
+      methodTwoArgTwo: [str]
+  methodArgumentsOrder:
+    __init__: !!python/tuple [self]
+    methodOne: !!python/tuple [self, methodOneArgOne]
+    methodTwo: !!python/tuple [self, methodTwoArgOne, methodTwoArgTwo]
+  methodInfo: {__init__: public, methodOne: public, methodTwo: public}
+  methodReturnValueClassNames:
+    __init__: [None]
+    methodOne: [str]
+    methodTwo: [None]
+  selfReferences: [str, list, int, dict, float]
+TestClassThree:
+  attributeInfo: {}
+  baseClasses: []
+  className: TestClassThree
+  classesToCollectInfoAbout: null
+  classesToIgnore: *id001
+  localReferences: [TestClassOne]
+  methodArgumentsDefaults: {}
+  methodArgumentsInfo: {}
+  methodArgumentsOrder:
+    __init__: !!python/tuple [self]
+    privateMethod: !!python/tuple [self]
+    publicMethod: !!python/tuple [self]
+  methodInfo: {__init__: public, privateMethod: private, publicMethod: public}
+  methodReturnValueClassNames:
+    __init__: [None]
+    privateMethod: [TestClassOne]
+    publicMethod: [None]
+  selfReferences: []
+TestClassTwo:
+  attributeInfo:
+    dict: [dict]
+    four: [str]
+    list: [list]
+    one: [str]
+    pi: [float]
+    three: [int, str]
+    two: [str]
+  baseClasses: [TestClassOne]
+  className: TestClassTwo
+  classesToCollectInfoAbout: null
+  classesToIgnore: *id001
+  localReferences: [str, int, TestClassOne]
+  methodArgumentsDefaults:
+    methodTwo: [<test.TestClasses.TestClassOne instance>]
+  methodArgumentsInfo:
+    methodTwo:
+      methodTwoArgOne: [TestClassOne]
+  methodArgumentsOrder:
+    __init__: !!python/tuple [self]
+    methodOne: !!python/tuple [self]
+    methodTwo: !!python/tuple [self, methodTwoArgOne]
+  methodInfo: {__init__: public, methodOne: public, methodTwo: public}
+  methodReturnValueClassNames:
+    __init__: [None]
+    methodOne: [None]
+    methodTwo: [None]
+  selfReferences: [str, list, int, dict, float]

@@ -1,0 +1,34 @@
+graph UML {
+  nodesep=0.3;
+  color="black"
+  bgcolor="white"
+  node [fontsize=10];
+
+    // class TestClassOne 
+    TestClassOne [fillcolor="", shape="record", style="", label="TestClassOne"];
+
+    // class TestClassThree 
+    TestClassThree [fillcolor="", shape="record", style="", label="TestClassThree"];
+      TestClassThree -- TestClassOne [arrowtail=odiamond];
+
+    // class InfoCollectorTest 
+    InfoCollectorTest [fillcolor="", shape="record", style="", label="InfoCollectorTest"];
+      InfoCollectorTest -- TestCase [arrowhead=empty];
+      InfoCollectorTest -- ResultProxy [arrowtail=odiamond];
+      InfoCollectorTest -- TestClassFour [arrowtail=odiamond];
+      InfoCollectorTest -- TestClassOne [arrowtail=odiamond];
+      InfoCollectorTest -- TestClassThree [arrowtail=odiamond];
+      InfoCollectorTest -- TestClassTwo [arrowtail=odiamond];
+
+    // class TestClassFour 
+    TestClassFour [fillcolor="", shape="record", style="", label="TestClassFour"];
+      TestClassFour -- TestClassThree [arrowtail=odiamond];
+      TestClassFour -- TestClassTwo [arrowtail=odiamond];
+
+    // class TestClassTwo 
+    TestClassTwo [fillcolor="", shape="record", style="", label="TestClassTwo"];
+      TestClassTwo -- TestClassOne [arrowhead=empty];
+      TestClassTwo -- TestClassOne [arrowtail=odiamond];
+
+
+}
